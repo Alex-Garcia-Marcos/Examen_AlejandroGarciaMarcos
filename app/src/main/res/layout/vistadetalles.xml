@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="27dp"
+        android:text="Nombre Producto"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPrecioProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvNombreProducto"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:text="Precio Producto"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/tvIdProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombreProducto"
+        android:layout_alignStart="@+id/tvNombreProducto"
+        android:layout_below="@+id/tvNombreProducto"
+        android:layout_marginTop="55dp"
+        android:text="Id Producto" />
+
+    <TextView
+        android:id="@+id/tvDescripcionProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvIdProducto"
+        android:layout_alignStart="@+id/tvIdProducto"
+        android:layout_below="@+id/tvIdProducto"
+        android:layout_marginTop="52dp"
+        android:text="Descripcion Producto" />
+
+    <ImageView
+        android:id="@+id/imagenProducto"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp"
+        app:srcCompat="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/tvIdProducto"
+        android:layout_toRightOf="@+id/tvIdProducto"
+        android:background="@drawable/back"
+        android:onClick="OnClickAnterior" />
+
+    <Button
+        android:id="@+id/btnPosterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAnterior"
+        android:layout_alignBottom="@+id/btnAnterior"
+        android:layout_alignEnd="@+id/imagenProducto"
+        android:layout_alignRight="@+id/imagenProducto"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/forward"
+        android:onClick="onClickSiguiente" />
+</RelativeLayout>
